@@ -1,0 +1,120 @@
+/* ==========================================
+   PALETA DE COLORES MODERNA Y LIMPIA
+   ========================================== */
+:root {
+  --bg-pagina: #f1f5f9;       /* Gris claro de fondo general */
+  --bg-tarjeta: #ffffff;      /* Blanco para las cards de productos */
+  --bg-header: #0f172a;       /* Azul noche / Oscuro elegante */
+  --bg-footer: #1e293b;       /* Azul oscuro secundario */
+  
+  --texto-principal: #334155; /* Gris oscuro para textos */
+  --texto-claro: #ffffff;     /* Texto blanco */
+  --texto-secundario: #64748b;/* Gris medio */
+  
+  --color-primario: #2563eb;  /* Azul moderno vibrante para botones */
+  --color-primario-hover: #1d4ed8;
+  --color-exito: #16a34a;     /* Verde para disponible */
+  --color-borde: #e2e8f0;     /* Gris suave para bordes */
+  --sombra: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Reset y estilos generales */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-pagina);
+  color: var(--texto-principal);
+}
+
+/* Header / Encabezado */
+header {
+  background-color: var(--bg-header);
+  color: var(--texto-claro);
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--sombra);
+}
+
+header h1, header h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: var(--texto-claro);
+}
+
+header nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+header nav a, header nav span {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+header nav a:hover, header nav span:hover {
+  color: var(--texto-claro);
+}
+
+/* Contenedor principal de la página */
+main {
+  max-width: 1100px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+}
+
+/* Grid o Flexbox para la lista de productos */
+.lista-productos, main > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+/* Estilos globales para las Tarjetas de Producto */
+.card {
+  background-color: var(--bg-tarjeta) !important;
+  border: 1px solid var(--color-borde) !important;
+  border-radius: 12px !important;
+  box-shadow: var(--sombra) !important;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Botones principales */
+.btn-primary, .btn {
+  background-color: var(--color-primario) !important;
+  border: none !important;
+  color: white !important;
+  border-radius: 6px !important;
+  padding: 0.6rem 1.2rem !important;
+  font-weight: 600 !important;
+  transition: background-color 0.2s !important;
+}
+
+.btn-primary:hover, .btn:hover {
+  background-color: var(--color-primario-hover) !important;
+}
+
+/* Pie de página */
+footer {
+  background-color: var(--bg-footer);
+  color: #94a3b8;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+}
