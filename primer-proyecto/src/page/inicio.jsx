@@ -35,6 +35,7 @@ function Inicio() {
         <p style={{ fontSize: '1.15rem', color: '#94a3b8', maxWidth: '600px', margin: '0 auto', lineHeight: '1.6' }}>
           Somos la mejor tienda del norte del país. Encuentra los mejores productos, ofertas exclusivas y atención de primera en un solo lugar.
         </p>
+        <p>Carlos Carranza y Dylan Barahona</p>
       </div>
 
       {/* Sección de Características / Beneficios */}
